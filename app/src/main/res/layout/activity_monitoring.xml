@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Monitoring">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/sunting_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/hijau_terang"
+                app:contentPadding="4dp"
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hapus_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/hijau_terang"
+                app:contentPadding="2dp"
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="365dp"
+            android:layout_height="530dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_utama"
+            android:orientation="horizontal"
+            app:cardBackgroundColor="@color/hijau_terang"
+            app:strokeWidth="0dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="350dp"
+                android:layout_height="186dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/bg_id_kolam" />
+
+            <LinearLayout
+                android:layout_width="361dp"
+                android:layout_height="165dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="203dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/eparrotfish_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="00:00"
+                        android:textColor="@color/putih_terang" />
+
+                    <TextView
+                        android:id="@+id/eparrotfish_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Hari, Tanggal Bulan Tahun"
+                        android:textColor="@color/putih_terang"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/eparrotfish_kolam_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@font/roboto_black"
+                        android:text="Kolam_0"
+                        android:textColor="@color/putih_terang"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/eparrotfish_status_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_black"
+                        android:text="Status"
+                        android:textColor="@color/putih_terang"
+                        android:textSize="12sp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView13a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="30dp"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Ketinggian Air"
+                            android:textColor="@color/putih_terang"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/eparrotfish_tinggi_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="0"
+                            android:textColor="@color/putih_terang"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView13b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="cm"
+                            android:textColor="@color/putih_terang"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/eparrotfish_gambar_list"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center|center_horizontal|center_vertical"
+                        android:layout_marginTop="3dp"
+                        app:shapeAppearanceOverlay="@style/RoundedImageView"
+                        app:srcCompat="@drawable/gambar_kolam" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="305dp"
+                android:layout_marginTop="210dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="195dp"
+                        android:background="@drawable/white_box"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <Switch
+                            android:id="@+id/switch1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="🎛️ Kontrol Otomatis"
+                            android:textColor="@color/hitam_terang"
+                            android:textSize="12sp"
+                            android:thumbTint="@color/switch_thumb_color"
+                            android:trackTint="@color/switch_track_color"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <Switch
+                            android:id="@+id/switch2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="🪣 Tabur Zat Kapur"
+                            android:textColor="@color/hitam_terang"
+                            android:textSize="12sp"
+                            android:thumbTint="@color/switch_thumb_color"
+                            android:trackTint="@color/switch_track_color"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <Switch
+                            android:id="@+id/switch3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="🧂Tabur Garam"
+                            android:textColor="@color/hitam_terang"
+                            android:textSize="12sp"
+                            android:thumbTint="@color/switch_thumb_color"
+                            android:trackTint="@color/switch_track_color"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <Switch
+                            android:id="@+id/switch4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="🚰 Isi Air Kolam"
+                            android:textColor="@color/hitam_terang"
+                            android:textSize="12sp"
+                            android:thumbTint="@color/switch_thumb_color"
+                            android:trackTint="@color/switch_track_color"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <Switch
+                            android:id="@+id/switch5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="🔄️ Buang Air Kolam"
+                            android:textColor="@color/hitam_terang"
+                            android:textSize="12sp"
+                            android:thumbTint="@color/switch_thumb_color"
+                            android:trackTint="@color/switch_track_color"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:background="@drawable/white_box"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/riwayat_btn"
+                            android:layout_width="105dp"
+                            android:layout_height="63dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/riwayat_icon" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Riwayat Data Monitoring"
+                            android:textAlignment="center"
+                            android:textColor="@color/hitam_terang"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="59dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="185dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="158dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/white_box"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/grafik_btn"
+                            android:layout_width="138dp"
+                            android:layout_height="82dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/grafik_icon" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Grafik Data Monitoring"
+                            android:textAlignment="center"
+                            android:textColor="@color/hitam_terang"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="158dp"
+                        android:layout_height="175dp"
+                        android:background="@drawable/white_box"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="139dp"
+                            android:layout_height="118dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/sensor_bg" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="💧 pH = "
+                                android:textColor="@color/hitam_terang"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/eparrotfish_ph_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="0,0"
+                                android:textColor="@color/hitam_terang"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView16a"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="🥛 Kekeruhan = "
+                                android:textColor="@color/hitam_terang"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/eparrotfish_kekeruhan_list"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="0"
+                                android:textColor="@color/hitam_terang"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textView16b"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text=" NTU"
+                                android:textSize="12sp"
+                                android:textColor="@color/hitam_terang" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

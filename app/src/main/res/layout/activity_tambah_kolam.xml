@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_edit_tambah"
+    tools:context=".TambahKolam">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="286dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="237dp"
+                android:layout_height="31dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+                app:tint="#468585" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Tambah Kolam"
+            android:textAlignment="center"
+            android:textColor="#393E46"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Masukan deskripsi kolam anda"
+            android:textAlignment="center"
+            android:textColor="#393E46"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="13dp" />
+
+        <ImageView
+            android:id="@+id/imgPostView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgPost"
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-130dp"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="@integer/material_motion_duration_long_2"
+            android:progressTint="@color/hijau_gelap" />
+
+        <EditText
+            android:id="@+id/editTextNamaKolam"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:background="@drawable/text_input"
+            android:ems="10"
+            android:hint="Nama Kolam (Tidak Ada Spasi dan Huruf Kapital)"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/hitam_terang"
+            android:textColorHint="@color/abu_abu"
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="13dp" />
+
+        <EditText
+            android:id="@+id/editTextUrlDatabase"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:background="@drawable/text_input"
+            android:ems="10"
+            android:hint="URL Realtime Firebase (contoh: https://eparrotfishnilabali-default-rtdb.firebaseio.com/)"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/hitam_terang"
+            android:textColorHint="@color/abu_abu"
+            android:textSize="8sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <Button
+            android:id="@+id/buttonBuatKolam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#50B498"
+            android:text="Buat Kolam"
+            android:textColor="@color/putih_terang" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

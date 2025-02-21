@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="335dp"
+            android:layout_height="159dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/tipcat_logo__1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="Sistem Integrasi Navigasi dan Informasi untuk Kualitas Lingkungan Air Ikan Nila"
+            android:textAlignment="center"
+            android:textColor="#F7F7F7"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="Aplikasi untuk Sistem Kontrol pH dan Kekeruhan Air"
+            android:textAlignment="center"
+            android:textColor="#F7F7F7"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="(Sebelum menggunakan aplikasi, mohon baca instruksi)"
+            android:textColor="#F7F7F7"
+            android:textSize="12sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#9CDBA6"
+            android:fontFamily="sans-serif-medium"
+            android:text="Instruksi penggunaan aplikasi"
+            android:textColor="@color/putih_terang" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="192dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#50B498"
+            android:fontFamily="sans-serif-medium"
+            android:text="Daftar"
+            android:textColor="@color/putih_terang" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#468585"
+            android:fontFamily="sans-serif-medium"
+            android:text="Masuk"
+            android:textColor="@color/putih_terang" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="149dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

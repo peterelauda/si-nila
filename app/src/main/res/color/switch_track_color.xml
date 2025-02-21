@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warna track ketika switch ON -->
+    <item android:color="@color/colorPrimaryDark" android:state_checked="true"/>
+    <!-- Warna track ketika switch OFF -->
+    <item android:color="@color/hitam_terang" android:state_checked="false"/>
+</selector>

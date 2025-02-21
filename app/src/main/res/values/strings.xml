@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- welcome strings -->
+
+    <string name="app_name">SI-NILA</string>
+    <string-array name="time_periods">
+        <item>Sehari</item>
+        <item>Sebulan</item>
+        <item>Setahun</item>
+    </string-array>
+</resources>

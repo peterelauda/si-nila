@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warna thumb ketika switch ON -->
+    <item android:color="@color/putih_terang" android:state_checked="true"/>
+    <!-- Warna thumb ketika switch OFF -->
+    <item android:color="@color/putih_gelap" android:state_checked="false"/>
+</selector>
